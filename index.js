@@ -76,8 +76,7 @@ client.on('messageCreate', async (message) => {
       model: "gpt-5-mini", // ★★★モデルをgpt-5-miniに変更★★★
       messages: messagesForAPI, // ✅ 履歴を含めたメッセージを渡す
       max_completion_tokens: 1500,
-      temperature: 0.9 // 応答の多様性を少し上げる
-    });
+          });
 
     const reply = response.choices[0].message.content.trim();
     await message.reply(reply);
