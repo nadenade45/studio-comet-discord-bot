@@ -73,7 +73,7 @@ client.on('messageCreate', async (message) => {
     ];
 
     const response = await openai.chat.completions.create({
-      model: "gpt-4o", // ★★★モデルをgpt-4oに変更★★★
+      model: "gpt-5-mini", // ★★★モデルをgpt-5-miniに変更★★★
       messages: messagesForAPI, // ✅ 履歴を含めたメッセージを渡す
       max_tokens: 1500,
       temperature: 0.9 // 応答の多様性を少し上げる
